@@ -1,0 +1,17 @@
+tag:
+type: txt
+help: User group
+
+syntax:expression: vchk $VAR(@) "group-name"
+
+val_help: txt; Group name
+
+begin: /usr/lib/vyatta/ipset.pl	\
+		--action=update-set	\
+		--set-type=user		\
+		--set-name=$VAR(@)
+
+delete: /usr/lib/vyatta/ipset.pl	\
+		--action=delete-set	\
+		--set-type=user		\
+		--set-name=$VAR(@)

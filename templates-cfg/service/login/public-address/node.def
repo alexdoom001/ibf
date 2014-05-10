@@ -1,0 +1,4 @@
+help: Public address or FQDN name of IBF service
+type: txt
+
+syntax:expression: vchk $VAR(@) "ipv4-v6" || vchk $VAR(@) "idn"

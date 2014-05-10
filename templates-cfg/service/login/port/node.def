@@ -1,0 +1,6 @@
+help: Port for IBF
+type: u32
+default: 8081
+val_help: u32:1-65535; Port number
+
+syntax:expression: $VAR(@) >= 1 && $VAR(@) <= 65535 ; "Port must be in the range from 1 to 65535"

@@ -1,0 +1,5 @@
+type: u32
+help: Time to live for client IP auth
+val_help: <1-86400>; Sec
+
+syntax:expression: $VAR(@) > 0 && $VAR(@) <= 86400; "timeout must be in range of 1 to 86400"

@@ -1,0 +1,5 @@
+multi:
+type: txt
+help: User name
+
+syntax:expression: exec "${vyatta_libdir}/vyatta/check_username.pl $VAR(@)"

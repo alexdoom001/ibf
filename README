@@ -1,2 +1,5 @@
-web-based authentication module for user auth via pam subsystem.
+Web-based user authentication module for vyos/vyatta.
+
+If configured, users must authenticate to gain access to
+the network.
 
